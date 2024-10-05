@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-   
 
-      <div class="relative main w-full">
-    <div class="absolute flex  top-0 loader z-[99] w-full h-screen ">
-        <div class="slide w-[20%] h-screen bg-zinc-300"></div>
-        <div class="slide w-[20%] h-screen bg-zinc-300"></div>
-        <div class="slide w-[20%] h-screen bg-zinc-300"></div>
-        <div class="slide w-[20%] h-screen bg-zinc-300"></div>
-        <div class="slide w-[20%] h-screen bg-zinc-300"></div>
-        <h1 id= "count" class="absolute right-20 bottom-10 text-7xl font-black ">100%</h1>
-        <h1 id="txtloader" class=" absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-9xl text-transparent font-black "></h1>
-    </div>
+<body>
+
+
+    <div class="relative main w-full">
+        <div id="loader" class="absolute flex items-center  justify-center top-0  z-[99] w-full h-screen ">
+            <div class="slide w-[20%] h-screen bg-zinc-300"></div>
+            <div class="slide w-[20%] h-screen bg-zinc-300"></div>
+            <div class="slide w-[20%] h-screen bg-zinc-300"></div>
+            <div class="slide w-[20%] h-screen bg-zinc-300"></div>
+            <div class="slide w-[20%] h-screen bg-zinc-300"></div>
+            <h1 id="count" class="absolute right-10 lg:right-20 bottom-10  text-4xl lg:text-7xl font-black ">100%</h1>
+            <!-- loadtxtcont  -->
+            <div id="loadtxtCont"
+                class="  absolute flex flex-col items-center  text-transparent justify-center w-[90%] h-[40%] lg:h-[70%] lg:w-[65%]  p-5">
+                <div class=" h-[30%] r loadtxt w-full text-5xl lg:text-9xl">
+                    <h1 id="loadtxt1"></h1>
+                </div>
+                <div
+                    class=" loadtxt h-[30%] w-full flex gap-10 items-center justify-center text-center text-5xl lg:text-9xl">
+                    <h1 id="loadtxt2"></h1>
+                    <div class="h-full w-[50%]   ">
+                        <img id="loadimg" class="h-[100%] w-[100%]" src="./src/imgs/hacker1.gif" alt="">
+                    </div>
+                </div>
+                <div id="loadtxt3" class="h-[30%] mt-10 loadtxt w-full text-5xl lg:text-9xl">
+
+                </div>
+            </div>
+        </div>
         <section class="z-[1] h-screen w-full bg-zinc-900"></section>
-      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
